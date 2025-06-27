@@ -1,4 +1,4 @@
-# ImageXpert Pro - AI-Powered Image Processing Suite
+# ImageXpert - AI-Powered Image Processing Suite
 
 [![Next.js](https://img.shields.io/badge/Next.js-14.2.4-black)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-18-blue)](https://reactjs.org/)
@@ -18,14 +18,6 @@ A comprehensive, professional-grade image processing suite with AI-powered tools
 - **Advanced Settings**: Custom quality, format-specific optimization
 - **Compression Analytics**: Detailed size reduction statistics
 - **Progressive JPEG**: Enhanced loading for web optimization
-
-#### **AI-Powered Resizer**
-- **Social Media Presets**: Instagram, Facebook, Twitter, LinkedIn optimized sizes
-- **Smart Resize Modes**: Fit, Fill, Stretch, and Crop options
-- **Aspect Ratio Lock**: Maintain proportions automatically
-- **Bulk Resize**: Process multiple images with same settings
-- **Custom Dimensions**: Pixel-perfect control
-- **Quality Preservation**: Advanced resampling algorithms
 
 #### **Professional Filter Editor**
 - **Real-time Filters**: 20+ professional-grade filters
@@ -88,15 +80,7 @@ A comprehensive, professional-grade image processing suite with AI-powered tools
 - **Progressive Options**: Enhanced web loading
 - **Metadata Preservation**: Keep or strip EXIF data
 - **ZIP Download**: Bulk download converted files
-
-#### **QR Code Generator**
-- **Custom Styling**: Colors, shapes, corner radius options
-- **Logo Integration**: Brand your QR codes
-- **Batch Generation**: Create multiple QR codes at once
-- **Multiple Formats**: URLs, text, contact info, WiFi credentials
-- **Error Correction**: L, M, Q, H levels for reliability
-- **High Resolution**: Scalable vector output
-
+- 
 #### **Collage Maker**
 - **Flexible Layouts**: Grid, freeform, and template-based
 - **Drag & Drop**: Intuitive image positioning
@@ -115,8 +99,8 @@ A comprehensive, professional-grade image processing suite with AI-powered tools
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/imagexpert-pro.git
-   cd imagexpert-pro
+   git clone https://github.com/Kedar355/ImageXpert-nextjs.git
+   cd imagexpert
    ```
 
 2. **Install dependencies**
@@ -202,13 +186,6 @@ npm start
 - **Offline Capable**: Works without internet connection
 - **Secure**: No third-party image processing services
 
-## 🌐 Browser Support
-
-- **Chrome/Edge**: 90+
-- **Firefox**: 85+
-- **Safari**: 14+
-- **Mobile**: iOS 14+, Android 8+
-
 ## 📊 Performance
 
 - **Fast Processing**: Optimized algorithms
@@ -217,43 +194,12 @@ npm start
 - **Batch Operations**: Parallel processing
 - **Caching**: Smart resource management
 
-## 🤝 Contributing
-
-We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
-
-### Development Setup
-```bash
-# Fork the repository
-git clone https://github.com/yourusername/imagexpert-pro.git
-cd imagexpert-pro
-npm install
-npm run dev
-```
-
 ### Code Style
 - TypeScript for type safety
 - ESLint + Prettier for formatting
 - Conventional commits
 - Component-based architecture
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- **React Team**: For the amazing framework
-- **Vercel**: For Next.js and hosting platform
-- **Tailwind CSS**: For the utility-first CSS framework
-- **Lucide**: For the beautiful icon set
-- **Open Source Community**: For inspiration and tools
-
-## 📞 Support
-
-- **Documentation**: [Wiki](https://github.com/yourusername/imagexpert-pro/wiki)
-- **Issues**: [GitHub Issues](https://github.com/yourusername/imagexpert-pro/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/imagexpert-pro/discussions)
-- **Email**: support@imagexpert.pro
 
 ## 🗺️ Roadmap
 
@@ -267,14 +213,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [ ] Advanced analytics dashboard
 - [ ] Plugin system
 
-### Version History
-- **v1.0.0**: Initial release with core features
-- **v1.1.0**: Added advanced analysis tools
-- **v1.2.0**: Background removal and text overlay
-- **v1.3.0**: QR code generation and batch processing
-
 ---
 
-**Made with ❤️ by the ImageXpert Pro Team**
+**Made with ❤️ by Kedar355**
 
 Transform your images with professional-grade tools, all in your browser. No uploads, no limits, just powerful image processing at your fingertips.
