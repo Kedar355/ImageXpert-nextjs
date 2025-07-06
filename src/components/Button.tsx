@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import { LucideIcon } from 'lucide-react'
+import { DivideIcon as LucideIcon } from 'lucide-react'
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'secondary' | 'outline' | 'ghost' | 'danger'
