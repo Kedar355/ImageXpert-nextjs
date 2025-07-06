@@ -27,11 +27,11 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     const baseClasses = 'relative inline-flex items-center justify-center font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed'
 
     const variants = {
-      primary: 'bg-black hover:bg-gray-800 active:bg-gray-900 dark:bg-white dark:hover:bg-gray-100 dark:active:bg-gray-200 text-white dark:text-black shadow-sm hover:shadow-md focus:ring-gray-500 dark:focus:ring-gray-400 border border-transparent',
-      secondary: 'bg-black hover:bg-gray-800 active:bg-gray-900 dark:bg-white dark:hover:bg-gray-100 dark:active:bg-gray-200 text-white dark:text-black shadow-sm hover:shadow-md focus:ring-gray-500 dark:focus:ring-gray-400 border border-transparent',
-      outline: 'border-2 border-black dark:border-white text-black dark:text-white bg-transparent hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black active:bg-gray-900 dark:active:bg-gray-100 focus:ring-gray-500 dark:focus:ring-gray-400 shadow-sm',
-      ghost: 'text-black dark:text-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black active:bg-gray-900 dark:active:bg-gray-100 focus:ring-gray-500 dark:focus:ring-gray-400',
-      danger: 'bg-red-600 hover:bg-red-700 active:bg-red-800 dark:bg-red-500 dark:hover:bg-red-600 dark:active:bg-red-700 text-white shadow-sm hover:shadow-md focus:ring-red-500 dark:focus:ring-red-400 border border-transparent'
+      primary: 'bg-gray-900 text-white border border-gray-900 shadow-sm focus:ring-gray-500',
+      secondary: 'bg-gray-100 text-gray-900 border border-gray-300 shadow-sm focus:ring-gray-500',
+      outline: 'border-2 border-gray-900 text-gray-900 bg-transparent shadow-sm focus:ring-gray-500',
+      ghost: 'text-gray-900 bg-transparent focus:ring-gray-500',
+      danger: 'bg-red-600 text-white border border-red-600 shadow-sm focus:ring-red-500'
     }
 
     const sizes = {
@@ -80,4 +80,4 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
 
 Button.displayName = 'Button'
 
-export default Button 
+export default Button

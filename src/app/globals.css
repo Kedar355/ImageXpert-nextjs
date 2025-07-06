@@ -780,117 +780,53 @@ textarea:focus-visible {
   outline-offset: 2px;
 }
 
-/* Modern button styling */
+/* Button styling fixes - Remove problematic hover effects */
 button {
   color: inherit;
   font-weight: 500;
+}
+
+/* Ensure proper button text visibility */
+button.bg-gray-900,
+button[class*="bg-gray-900"] {
+  color: white !important;
+}
+
+button.bg-gray-100,
+button[class*="bg-gray-100"] {
+  color: #1f2937 !important;
 }
 
 button.text-white {
   color: white !important;
 }
 
-/* Ensure black buttons have white text */
-button.bg-black,
-button.bg-gray-900,
-button:hover.hover\:bg-black,
-button:hover.hover\:bg-gray-900,
-button[class*="bg-black"],
-button[class*="bg-gray-900"] {
-  color: white !important;
-}
-
-/* Ensure dark buttons maintain white text in all states */
-button[class*="bg-gray-900"]:hover,
-button[class*="bg-black"]:hover,
-button[class*="bg-gray-800"]:hover {
-  color: white !important;
-}
-
-/* Override glass-effect span colors for black buttons */
-button.bg-black span,
-button.bg-gray-900 span,
-button[class*="bg-black"] span,
-button[class*="bg-gray-900"] span,
-button[class*="bg-gray-800"] span,
-.glass-effect button.bg-black span,
-.glass-effect button.bg-gray-900 span,
-.glass-effect button[class*="bg-black"] span,
-.glass-effect button[class*="bg-gray-900"] span,
-.glass-effect button[class*="bg-gray-800"] span,
-.glass-card button.bg-black span,
-.glass-card button.bg-gray-900 span,
-.glass-card button[class*="bg-black"] span,
-.glass-card button[class*="bg-gray-900"] span,
-.glass-card button[class*="bg-gray-800"] span {
-  color: white !important;
-}
-
-/* Ensure SVG icons in black buttons are white */
-button.bg-black svg,
-button.bg-gray-900 svg,
-button[class*="bg-black"] svg,
-button[class*="bg-gray-900"] svg,
-button[class*="bg-gray-800"] svg,
-.glass-effect button.bg-black svg,
-.glass-effect button.bg-gray-900 svg,
-.glass-effect button[class*="bg-black"] svg,
-.glass-effect button[class*="bg-gray-900"] svg,
-.glass-effect button[class*="bg-gray-800"] svg,
-.glass-card button.bg-black svg,
-.glass-card button.bg-gray-900 svg,
-.glass-card button[class*="bg-black"] svg,
-.glass-card button[class*="bg-gray-900"] svg,
-.glass-card button[class*="bg-gray-800"] svg {
-  color: white !important;
-}
-
-/* Dark mode - Light buttons should have dark text */
-.dark button.bg-gray-100 span,
-.dark button.bg-white span,
-.dark button[class*="bg-gray-100"] span,
-.dark button[class*="bg-white"] span,
-.dark .glass-effect button.bg-gray-100 span,
-.dark .glass-effect button.bg-white span,
-.dark .glass-effect button[class*="bg-gray-100"] span,
-.dark .glass-effect button[class*="bg-white"] span,
-.dark .glass-card button.bg-gray-100 span,
-.dark .glass-card button.bg-white span,
-.dark .glass-card button[class*="bg-gray-100"] span,
-.dark .glass-card button[class*="bg-white"] span {
+button.text-gray-900 {
   color: #1f2937 !important;
 }
 
-/* Dark mode - Ensure SVG icons in light buttons are dark */
-.dark button.bg-gray-100 svg,
-.dark button.bg-white svg,
-.dark button[class*="bg-gray-100"] svg,
-.dark button[class*="bg-white"] svg,
-.dark .glass-effect button.bg-gray-100 svg,
-.dark .glass-effect button.bg-white svg,
-.dark .glass-effect button[class*="bg-gray-100"] svg,
-.dark .glass-effect button[class*="bg-white"] svg,
-.dark .glass-card button.bg-gray-100 svg,
-.dark .glass-card button.bg-white svg,
-.dark .glass-card button[class*="bg-gray-100"] svg,
-.dark .glass-card button[class*="bg-white"] svg {
+/* Dark mode button adjustments */
+.dark button.bg-gray-900,
+.dark button[class*="bg-gray-900"] {
+  background-color: #f9fafb !important;
   color: #1f2937 !important;
 }
 
-/* Button focus improvements */
-button:focus-visible {
-  outline: 2px solid #374151;
-  outline-offset: 2px;
+.dark button.bg-gray-100,
+.dark button[class*="bg-gray-100"] {
+  background-color: #374151 !important;
+  color: #f9fafb !important;
 }
 
-/* Smooth button interactions */
-button:not(:disabled) {
-  cursor: pointer;
+/* Ensure SVG icons inherit proper colors */
+button svg {
+  color: currentColor !important;
 }
 
-button:disabled {
-  cursor: not-allowed;
-  opacity: 0.5;
+/* Remove all problematic hover effects that cause text visibility issues */
+button span,
+button svg {
+  color: inherit !important;
 }
 
 input,
@@ -1133,33 +1069,4 @@ input[type="color"]::-webkit-color-swatch {
       opacity: 0;
     }
   }
-}
-
-/* Ensure all button SVG icons inherit current color for theme awareness */
-button svg {
-  color: currentColor;
-}
-
-/* Light theme - buttons with text-black should have black icons */
-button.text-black svg,
-button[class*="text-black"] svg {
-  color: black !important;
-}
-
-/* Dark theme - buttons with text-white should have white icons */
-.dark button.text-white svg,
-.dark button[class*="text-white"] svg {
-  color: white !important;
-}
-
-/* Light theme - buttons with text-white should have white icons */
-button.text-white svg,
-button[class*="text-white"] svg {
-  color: white !important;
-}
-
-/* Dark theme - buttons with text-black should have black icons */
-.dark button.text-black svg,
-.dark button[class*="text-black"] svg {
-  color: black !important;
 }
